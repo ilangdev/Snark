@@ -1,0 +1,23 @@
+module Types (Group, Matrix) where
+
+--import qualified Prelude as H
+
+--class Monoid a where
+--  id  :: a
+--  (#) :: a -> a -> a
+
+
+newtype Matrix a = Matrix [[a]]
+
+class (Monoid a) => Group a where
+  inv :: a
+
+class (Group a) => Ring a where
+  (><) :: a -> a -> a
+  
+
+ 
+
+  
+  
+

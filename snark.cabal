@@ -25,6 +25,9 @@ source-repository head
 
 library
   exposed-modules:
+      Backend
+      Frontend
+      Language
       Lib
   other-modules:
       Paths_snark
